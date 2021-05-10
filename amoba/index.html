@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Amöba</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>Amöba</h1>
+    </header>
+    <div id="gamespace">
+      <div id="gameheader">
+        <div id="gameheadermessage">
+          <h6></h6>
+        </div>
+        <div id="gameconfig">
+          <button id="configbutton" class="fas fa-cog"></button>
+        </div>          
+      </div>
+      <div id="gameboard">
+        <div id="gameendmessage"></div>
+          <div id="configform" class="modal">
+            <div class="modal-content">
+              <span id="closeconfig" class="close">&times;</span>
+              <p>Amőba beállítása</p>
+              <p>1. Játékos:</p>
+              <input type="text" id="player1name" style="display: block">
+              <p>2. Játékos:</p>              
+              <input type="text" id="player2name" style="display: block">
+              <p>Pálya Mérete:</p>
+              <select id="gridsize" style="display: block">
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5</option>
+                <option value='6'>6</option>
+                <option value='7'>7</option>
+                <option value='8'>8</option>
+                <option value='9'>9</option>
+                <option value='10'>10</option>
+              </select>
+              <p>Szükséges Pont:</p>
+              <select id="winsize" style="display: block">
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5</option>
+                <option value='6'>6</option>
+                <option value='7'>7</option>
+                <option value='8'>8</option>
+                <option value='9'>9</option>
+                <option value='10'>10</option>
+              </select>
+              <p>Körök:</p>
+              <select id="tournamentrounds" style="display: block">
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5</option>
+                <option value='6'>6</option>
+                <option value='7'>7</option>
+                <option value='8'>8</option>
+                <option value='9'>9</option>
+                <option value='10'>10</option>
+              </select>
+              <button id="configSaveButton">Változtatások Mentése</button>
+            </div>
+          </div>   
+      </div>
+      <div id="gamefooter">
+        <button id="restartbutton">Újra</button>
+      </div>  
+    </div>
+    <div id="scorespace">
+      <div id="scoreheader">
+        <div id="scoreheadermessage">
+          <h6></h6>
+        </div>
+      </div>
+      <div id="scoretablespace">
+        <table id="scoretable"></table>
+      </div>
+      <div id="scorefooter"><h2></h2></div>
+    </div>     
+  </div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.confetti.js"></script>
+<script src="js/main.js"></script>
+</html>

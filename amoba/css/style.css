@@ -1,0 +1,227 @@
+
+body { 
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#wrapper {
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+}
+
+h6 {
+  margin: 0;
+  color: rgb(85, 85, 85);
+  font-size: 1em;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  background-color: rgb(26, 37,47);
+}
+
+
+h1 {
+  margin: 0 50px;
+  padding-top: 23px;
+  width: 400px;
+  text-align: left;
+  font-size: 2.4em;
+  color: white;
+  height: 77px;
+}
+
+
+#gamespace {
+  width: 70%;
+  height: 600px;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+
+#gameheader {
+  width: 480px;
+  margin: 5px auto;
+}
+
+
+#gameheadermessage {
+  width: 255px;
+  margin-top: 25px;
+  margin-left: 15px;
+  display: inline-block;
+}
+
+
+#gameconfig {
+  display: inline-block;
+  text-align: right;
+  width: 200px;
+}
+
+
+#gameboard {
+  width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+
+.tile {
+  border-radius: 20px;
+  background-color: rgb(153, 204, 255);
+}
+
+
+.tile:hover {
+  background-color: rgb(85, 90, 104);
+}
+
+
+.icon {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+
+#gamefooter {
+  width: 480px;
+  margin: 0 auto;
+}
+
+
+#gameendmessage {
+  position: absolute;
+  display: none;
+  z-index: 10;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  font-size: 40px;
+  font-weight: 500;
+  color: rgb(44, 62, 80);
+}
+
+#scorespace {
+  height: 600px;
+  display: inline-block;
+  position: absolute;
+  margin: 0 auto;
+}
+
+#scoreheader {
+  margin: 5px auto;
+}
+
+#scoreheadermessage {
+  margin-top: 25px;
+  margin-left: 15px;
+  display: inline-block;
+}
+
+#scoretablespace {
+  margin: 15px auto;
+}
+
+#scoretable {
+  border-collapse: collapse;
+  width: 80%;
+  margin-left: 10px;
+}
+
+#scoretable th {
+  border: 1px solid rgb(105, 105, 105);
+  background-color: rgb(206, 225, 255);
+  font-size: 1em;
+  font-weight: 700;
+  width: 180px;
+}
+
+#scoretable td {
+  text-align: center;
+  font-size: 0.9em;
+  border: 1px solid rgb(105, 105, 105);
+}
+
+#scoretable tfoot {
+  background-color: rgb(150, 188, 247);
+}
+
+#scorefooter {
+  margin: 0 10px auto;
+}
+
+#restartbutton {
+  background-color: rgb(100, 100, 100);
+  border: 1px solid rgb(100, 100, 100);
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  text-align: center;
+  width: 100px;
+  height: 35px;
+  margin-left: 10px;
+  margin-top: 10px;
+  outline: none;
+}
+
+#restartbutton:hover {
+  background-color: white;
+  color: rgb(100, 100, 100);
+}
+
+#configbutton {
+  background-color: rgb(100, 100, 100);
+  border: 1px solid rgb(100, 100, 100);
+  color: white;
+  font-size: 0.6em;
+  border-radius: 5px;
+  text-align: center;
+  height: 16px;
+  margin-right: 10px;
+  outline: none;
+}
+
+#configbutton:hover {
+  background-color: white;
+  color: rgb(100, 100, 100);
+}
+
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% 24%;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 20%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
